@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2f2f2f;
+    font-family: 'Nanum Gothic', Verdana, sans-serif;
+    color: azure;
+    height: 100vh;
+    }
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; 
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    background: black;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 1.25rem;
+}
+
+.navbar ul li a:hover {
+    color: dodgerblue;
+    cursor: pointer;    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.introText {
+    position: relative;
+    z-index: 99;
+    top: 350px;
+    left: 50px;
+    font-size: 4rem;
+    align-self: flex-start;
+}
+
+.introText h1 span {
+    color: coral;
+}
+
+h2 {
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+/* STYLE SHEET FOR PROJECTS SECTION */
+
+#Projects {
+    background: #424242;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#Projects h2 {
+    align-self: flex-start;
+    padding: 0.75em 0;
+    margin: 0 20%;
+}
+
+#Projects img {
+    align-self: center;
+}
+
+#Projects p {
+    padding-bottom: 10rem;
+    align-self: center;
+    font-size: 1.25rem;
+}
+
+
+/* STYLE FOR ABOUT SECTION */
+
+#About {
+    /* background: gold; */
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+
+#About h2 {
+    align-self: flex-start;
+    padding: 0.75em 0;
+    margin: 0 20%;
+}
+
+.aboutTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#About div:nth-of-type(1) p {
+    max-width: 50%;
+    max-height: 20%;
+    font-size: 1.25rem;
+    padding-top:2em;
+}
+
+.photo {
+    background-image: url(https://imgcdn.ukc2.com/i/374092?fm=webp&time=1631125629&dpr=1&s=76f228fdb7dbbd2d2ddb4777a5231374);
+    background-size: 150%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    justify-self: center;
+    }
+
+.aboutBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 350px;
+    height: 350px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-left: 10rem;
+}
+
+.icons img {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    max-width: 50%;
+    max-height: 150px;
+    flex-wrap: wrap;
+}
+
+.aboutBottom p {
+    max-width: 50%;
+    font-size: 1.25rem;
+    padding-top: 2em;
+}
+
+/* STYLE FOR CONTACT SECTION SECTION */
+
+#Contact {
+    background: #424242;
+    align-self: flex-start;
+    justify-content: space-around;
+}
+
+#Contact h2 {
+    align-self: flex-start;
+    padding: 0.75em 0;
+    margin: 0 20%;
+}
+
+.contactMain  {
+    font-size: 1.25rem;
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+.contactMain p {
+    margin: 1.25rem auto;
+    max-width: 575px;
+    }
+
+#Name {
+    margin-right: 0.5rem;
+}
+
+.contactMain input, button  {
+    font-size: 1.25rem;
+    font-family: inherit;
+    margin: 1.25rem auto;
+    padding: 0.3rem;
+    }
+
+.contactMain input {
+border: 2px solid white;
+border-radius: 0.75rem;
+    }
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+#Message {
+    font-size: 1.25rem;
+    font-family: inherit;
+    resize: none;
+    border: 2px solid white;
+    border-radius: 0.75rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+}
+
+#Name:focus {
+    border: 0.2rem solid dodgerblue;
+    box-shadow: 0 0 1.5rem 0 dodgerblue; 
+}
+
+#Email:focus {
+    border: 0.2rem solid dodgerblue;
+    box-shadow: 0 0 1.5rem 0 dodgerblue; 
+}
+
+#Message:focus {
+border: 0.2rem solid dodgerblue;
+box-shadow: 0 0 1.5rem 0 dodgerblue; 
+}
+
+.submit {
+    background: none;
+    color: coral;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    padding: 0.6rem 2.2rem;
+    font-size: 1.5rem;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.submit:hover{
+    border-color: dodgerblue;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em dodgerblue;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.line {
+    border-top: 2px solid white;
+    margin: 10px auto 10px auto;
+    width: 1200px;
+}
+
+.socials img {
+	filter: invert(46%) sepia(6%) saturate(11%) hue-rotate(2deg) brightness(91%) contrast(94%);
+	margin: 0 auto;
+	padding: 0.25rem 1rem;
+	max-width: 48px;
+	max-height: 48px;
+}
+
+.linkedin:hover {
+    filter: invert(26%) sepia(100%) saturate(1559%) hue-rotate(179deg) brightness(94%) contrast(107%);
+    cursor:pointer;
+}
+
+.github:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(211deg) brightness(106%) contrast(101%);
+    cursor:pointer;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Best - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="Home">
+            <div class="introText">
+                <h1>Hey, I'm <span>Mark.</span></h1>
+            </div>
+            <canvas id="particles">
+            </canvas>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <img src="https://media4.giphy.com/media/hEc4k5pN17GZq/giphy.gif?cid=ecf05e479o877ct9cgrjzxrzga5ci9n48284m4otkf6nc5qt&rid=giphy.gif&ct=g"
+                alt="">
+            <p>Projects coming soon!</p>
+        </section>
+        <section id="About">
+            <h2>About</h2>
+            <div class="aboutTop">
+                <p>I started my professional career by completing an apprenticeship and earning a HNC in electrical
+                    engineering whilst working on the protection and control systems for offshore windfarms.
+                    <br><br>
+                    After my apprenticeship I moved
+                    into a service and support role where I was an on-call engineer supporting National Grid substations
+                    across the country.
+                    <br><br>
+                    From there I transferred my skills into industrial automation where I learned how to program PLCs
+                    working in many different industries such as the rail industry and water utilities.
+                </p>
+                <div class="photo">
+                    <!-- <img src="https://imgcdn.ukc2.com/i/374092?fm=webp&time=1631125629&dpr=1&s=76f228fdb7dbbd2d2ddb4777a5231374"
+                        alt=""> -->
+                    <!-- Applied as a background image-->
+                </div>
+            </div>
+            <div class="aboutBottom">
+                <div class="icons">
+                    <img class="HTML" src="Icons/html.png" alt="HTML">
+                    <img class="CSS" src="Icons/CSS.png" alt="CSS">
+                    <img class="JavaScript" src="Icons/JavaScript.png" alt="JavaScript">
+                </div>
+                <p>During this time I started to teach myself HTML, CSS and JavaScript though various courses on Udemy,
+                    YouTube and other online resources.
+                    <br><br>
+                    I have always had a passion for design, creativity and learning how things work; as a result have
+                    found myself developing a keen interest for front end web development, where I hope to put my new
+                    found skills to work.
+                    <br><br>
+                    Outside of this, I have a stong love for outdoor adventures which will normally evolve around
+                    climbing, surfing, and travelling in my van with my partner.
+                </p>
+            </div>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <div class="contactMain">
+                <p>Thank you for checking out my portfolio. If you would like to get in contact please feel free to
+                    reach out using the email form below or contact me on LinkedIn/GitHub.</p>
+                <form action="https://formsubmit.co/markjb16@hotmail.com" method="POST" class="contactForm">
+                    <label for="name">Name:</label> <input type="text" id="Name" placeholder="Your Name" required>
+                    <label for="email">Email:</label> <input type="email" id="Email" placeholder="Your Email" required>
+                    <br>
+                    <label for="message" class="message">Message:</label>
+                    <textarea name="message" id="Message" cols="58" rows="10" maxlength="500" spellcheck="true"
+                        placeholder="Please type your message here:"></textarea> <br>
+                    <button type="submit" class="submit">Send</button>
+                </form>
+            </div>
+            <div>
+                <div class="line"></div>
+                <div class="socials">
+                    <a href="https://www.github.com/Smile-youve-won"><img class="github" src="Icons/Github.png"
+                            alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/mark-best-5aab34140"><img class="linkedin"
+                            src="Icons/LinkedIn.png" alt="LinkedIn"></a>
+                </div>
+                <p>Designed & Created by Mark.Best ©</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
